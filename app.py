@@ -2,7 +2,6 @@ import numpy as np
 import pickle
 from flask import Flask,request,render_template,url_for,jsonify
 from sklearn.externals import joblib
-from waitress import serve
 
 churn_pred = joblib.load("./churn_pred.pkl")
 
@@ -31,5 +30,5 @@ def predict():
         
 
 if __name__ == '__main__':
-    #app.run(host='0.0.0.0',port="8400",debug=True)
-    serve(app, host="0.0.0.0", port=8080)
+    app.run(debug=True)
+    #serve(app, host="0.0.0.0", port=8080)
