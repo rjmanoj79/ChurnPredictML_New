@@ -1,0 +1,32 @@
+<html>
+  
+  <head> 
+   <style>
+    p.formfield {padding-right:10px; width:15%;}
+    body {background-color: coral;}
+   h1 {text-align: center;}
+   </style>
+  </head>
+  
+   <body>
+      <h1>Churn Prediction: A Challenger Use-Case</h1>
+
+      <form action = "http://localhost:5000/result" method = "POST">
+
+         <p class="formfield">Credit Score: <input type = "text" name = "creditscore" /></p>
+         <p class="formfield">Age: <input type = "text" name = "Age" /></p>
+         <p class="formfield">Tenure: <input type = "text" name = "Tenure" /></p>
+         <p class="formfield">Balance:<input type ="text" name = "Balance" /></p>
+	 <p class="formfield">Products Numbers:<input type = "text" name = "NumOfProducts" /></p>
+         <p class="formfield">Credit Card Holder (1/0)<input type = "text" name = "HasCrCard" /></p>
+         <p class="formfield">Active Member: (1/0)<input type = "text" name = "ActiveMember" /></p>
+         <p class="formfield">Estimated Salary:<input type ="text" name = "Balance" /></p>
+	 <p class="formfield">Germany (1/0):<input type = "text" name = "Germany" /></p>
+         <p class="formfield">Spain (1/0):<input type = "text" name = "Spain" /></p>
+         <p class="formfield">France (1/0):<input type = "text" name = "France" /></p>
+         <p class="formfield">Gender (1-Male; 0-Female):<input type ="text" name = "Male" /></p>
+ 	 <p class="formfield"><input type="submit" value="submit"><p>
+
+       </form>
+   </body>
+</html>
